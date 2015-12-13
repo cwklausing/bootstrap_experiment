@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Sample Page</title>
+    <!--Here's where I'm adding the bootstrap file!-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<!--Can use '.col-md-* to give columns to the page-->
+<!--for example class='col-md-12'-->
+    <div class="container">
+        <!--can also use container-fluid class to get outside the container-->
+        <div class="row">
+            <h1 class="col-sm-12">My first Bootstrap Project</h1>
+        </div>
+        <div class="row">
+            <!--changed col-md-6 to col-sm-6 in all of the div classes
+            can also change to col-xs-* for extra small screens-->
+            <div class='col-md-6 col-sm-12'>
+                <h2>It's going to be lots of fun</h2>
+                <p>Here's more stuff. Stuff stuff stuff. Lots of things to talk about, so little time, and so many silly things I could type</p>
+                <button type="button">Donate to my cause</button>
+                <button type="button">Buy tickets to my show</button></div>
+            <!--the col-md-offset-1 puts a blank column to the left of the div-->
+            <div class="col-md-6 hidden-sm hidden-xs">
+                <img src="images/prime_headshot.jpg">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                <h3>I like to make food</h3>
+                <p>Like bacon! Pizza is also pretty great.Also last night Molly made some delicious food and we shared it with Tom and Abby</p>
+            </div>
+
+            <div class="col-sm-4 col-xs-6">
+                <h3>I also bike</h3>
+                <p>Although not as much anymore. But soon I'll be back on the roads again! Once I'm done with school</p>
+            </div>
+
+            <div class="col-sm-4 col-xs-6">
+                <h3>I'm learning how to code</h3>
+                <p>Like this! I'm comfortable with CSS and Javascript, and I'm getting comfortable with a bunch of other tools like Mongo, SQL, Angular, and more!</p>
+            </div>
+        </div>
+
+
+    </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
